@@ -6,7 +6,7 @@
   margin: 0 auto;
 }
 
-.container-full-width{
+.container-full-width {
   width: 100%;
 }
 
@@ -16,7 +16,7 @@
   clear: both;
 }
 
-/* regole di colonne */
+/* regole delle colonne */
 
 [class*="col-"] {
   float: left;
