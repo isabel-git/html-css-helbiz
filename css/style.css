@@ -36,8 +36,8 @@ a{
 
 /* regole di debug */
 [class*="col-"] {
-  min-height: 100px;
-  background-color: pink;
+  /* min-height: 100px;
+  background-color: pink; */
   /* border: solid 1px  #000;
   padding: 2px; */
 }
@@ -121,15 +121,29 @@ nav a.border{
 }
 
 /* sezione how to */
-/* background */
 #how{
+  position: relative;
+  padding: 200px 0;
+}
+
+/* background */
+#helbizbanner{
   background-image: url(../img/helbizbanner.jpg);
-  min-height: 200px;
+  background-position: left;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 400px;
+}
+
+#iphone{
+  position: absolute;
+  bottom: 0;
+  transform: translate(-50%, 0);
 }
 
 /* sezioone smart mobility */
 #mobility{
-
+  color: white;
 }
 /* background */
 .sfondo{
@@ -144,14 +158,20 @@ nav a.border{
   padding: 100px 0;
 }
 
-.sfondo.blu{
-  background-color: #364757;
+#blue-box{
+  background-image: url(../img/helbizapp.png);
+  background-color: #41566a;
+  /* position: absolute  */
+  background-size: cover;
+  background-position: center 80px;
+  background-repeat: no-repeat;
+  min-height: 300px;
 }
 
-.sfondo.helbizapp{
-  background-image: url(../img/helbizapp.png);
+/* .sfondo.helbizapp{
+  background-image: url();
   background-size: contain;
-}
+} */
 
 .sfondo.cities{
   background-image: url(../img/cities.jpg);
@@ -162,12 +182,12 @@ nav a.border{
 #gallery{
   background-image: url(../img/social-banner.jpg);
   min-height: 600px;
-  padding: 225px 0;
+  padding: 250px 0;
 }
 
 #gallery [class*="col-"]{
   background-color: white;
-  padding: 40px 0;
+  padding: 50px 20px;
 }
 
 #gallery a{
