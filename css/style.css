@@ -34,105 +34,91 @@ a{
   padding: 0 10%;
 }
 
-/* regole di debug */
+.padding-content{
+  padding: 2% 1%;
+}
+
+.margin-bottom{
+  margin-bottom: 20px;
+}
+
+/* regole di debug
 [class*="col-"] {
-  /* min-height: 100px;
-  background-color: pink; */
-  /* border: solid 1px  #000;
-  padding: 2px; */
+  min-height: 100px;
+  background-color: pink;
 }
 
 [class*="col-"] > .row > [class*="col-"]{
   background-color: green;
 }
-
-section{
-  margin-top: 50px;
-}
-
-img {
-  max-height: 500px;
-  height: auto;
-}
 /* fine debug */
 
+/* fine debug */
 
-/* navigazione */
-nav{
-  background: white;
+/* INTESTAZIONE */
+header{
+  color: white;
 }
 
-
-nav .box-logo , nav .box-menu-nav {
-  padding: 50px 0;
+/* NAVIGAZIONE */
+/* background */
+header .navbar.navbar-default {
+  background-color: #1a252f;
 }
-
-
-nav .box-menu-nav{
-  margin-left: 5px;
-}
-
-nav li,
-#social-list li {
-  display: inline-block;
-}
-
-nav a{
-  color: black;
-}
-
-nav a.border{
-  border-left: 1px solid black;
-  border-right: 1px solid black;
-  padding: 0 5px;
-}
-
-#nav-large {
+/* fixed */
+header .navbar.navbar-default {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 900;
+  border: none;
 }
 
-#nav-mobile {
-  display: none;
-}
-
+/* sezione header */
 #jumbo {
   min-height: 500px;
   background-image: url(../img/hero.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  margin-top: 100px;
+  margin-top: 50px;
   padding-top: 100px;
 }
 
 
-/* regole corpo pagina */
-
+/* CORPO PAGINA */
+img {
+  max-height: 300px;
+  height: auto;
+}
+/* prima sezione del main */
 .centra-sez1 {
   padding: 0 5%;
 }
 
-/* sezione prodotti */
-#product [class*="col-"]{
+.bike{
   background-color: #fafafa;
+  min-height: 100px;
 }
 
+.bike.left{
+  margin-right: 5px;
+}
+
+.bike.rhigt{
+  margin-left: 5px;
+}
+
+/* sezione 2 del main */
 /* sezione how to */
 #how{
   position: relative;
-  padding: 200px 0;
 }
 
 /* background */
-#helbizbanner{
+main .sfondo.banner{
   background-image: url(../img/helbizbanner.jpg);
   background-position: left;
-  background-size: cover;
-  background-repeat: no-repeat;
-  min-height: 400px;
 }
 
 #iphone{
@@ -141,70 +127,104 @@ nav a.border{
   transform: translate(-50%, 0);
 }
 
-/* sezioone smart mobility */
-#mobility{
+#how .text{
+  text-align: center;
+  padding: 1% 0;
+}
+
+@media screen and (max-width: 991px){
+  #iphone{
+    display: none;
+  }
+}
+
+/* sezione 3 del main */
+#general{
   color: white;
 }
 /* background */
-.sfondo{
+main div.sfondo{
   min-height: 300px;
-  background-position: center;
-  background-size: cover;
   background-repeat: no-repeat;
+  background-size: cover;
 }
-
-.sfondo.scooter{
+main div.sfondo.smart{
   background-image: url(../img/scooter.jpg);
-  padding: 100px 0;
+  background-position: bottom;
+  background-position: right;
 }
 
-#blue-box{
+main div.sfondo.app{
   background-image: url(../img/helbizapp.png);
   background-color: #41566a;
-  /* position: absolute  */
-  background-size: cover;
   background-position: center 80px;
-  background-repeat: no-repeat;
-  min-height: 300px;
 }
 
-/* .sfondo.helbizapp{
-  background-image: url();
-  background-size: contain;
-} */
-
-.sfondo.cities{
+main div.sfondo.city{
   background-image: url(../img/cities.jpg);
 }
 
-/* sezioone galleria immagini */
-/* background */
-#gallery{
+/* padding text section */
+main .text-smart{
+  padding-top: 50px;
+}
+main .text-app, main .text-city{
+  padding-top: 5px;
+}
+
+
+/* sezione 4 del main */
+main .sfondo.galleria{
   background-image: url(../img/social-banner.jpg);
-  min-height: 600px;
   padding: 250px 0;
 }
 
-#gallery [class*="col-"]{
+main #gallery .padd-bianco{
   background-color: white;
-  padding: 50px 20px;
+  width: 50%;
+  padding: 20px 50px;
+  display: inline-block;
 }
 
-#gallery a{
+main #gallery a{
   color: black;
+  padding: 0 2%;
+  font-size: 25px;
 }
 
 /* footer */
 footer{
-  background-color: black;
-  min-height: 300px;
+  background-color: #1a252f;
   color: white;
+  min-height: 200px;
 }
 
+footer section{
+  padding: 4%;
+}
+
+footer .logo{
+  margin-bottom: 10px;
+}
+
+/* color */
 footer a{
   color: white;
 }
 
-.platforms img{
+footer .bottom{
+  text-align: center;
+}
+
+footer .bottom li{
+  display: inline-block;
+  padding: 2%;
+}
+
+footer .bottom i{
+  font-size: 20px;
+}
+
+.platforms img {
   height: 40px;
 }
